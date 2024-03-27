@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import { DashboardCard } from "./components/DashboardCard";
 import { DashboardEmpty } from "./components/DashboardEmpty";
 import { getUserOrders } from "../../services";
 import { useTitle } from "../../hooks/useTitle";
-import { toast } from "react-toastify";
 
 export const DashboardPage = () => {
   const [orders, setOrders] = useState([]);
